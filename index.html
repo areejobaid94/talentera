@@ -1,40 +1,71 @@
-<!-- <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=7">
-        <link rel="stylesheet" href="./index.css">
-        <title>Tatentera</title>
-    </head>
-    <body id = 'body'>
-        <iframe id="header" src="html/header.html"name="header" allowTransparency="true" scrolling="no" frameborder="0" ></iframe>
-        </iframe>
-        <iframe id="main" src="html/main.html"name="main" allowTransparency="true" scrolling="no" frameborder="0" ">
-        </iframe>
-        <iframe id="footer" src="html/footer.html"name="footer" allowTransparency="true" scrolling="no" frameborder="0">
-        </iframe>
-    </body>
-</html> -->
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=7">
-        <link rel="stylesheet" href="./index.css">
-        <title>Tatentera</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=7">
+      <link rel="stylesheet" href="./index.css">
+      <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./css/header.css">
+      <script src="https://kit.fontawesome.com/37c71ee2d6.js" crossorigin="anonymous"></script>
+      <title>Tatentera</title>
     </head>
+    <!-- Header-->
     <body id = 'body'>
-        <div class="main">
-            <!-- Header-->
-            <iframe id="header" src="html/header.html"name="header" allowTransparency="true" frameborder="0" ></iframe>
-            </iframe>  
-            <!--Team Section -->
-            <section class="container">
-              <header class="first-sec">
-                <h1>Our Team</h1>
-                <p>Meet the team - our office rate:</p>
-              </header>
-            </section>
-            <!--Team Section -->
-            <section class="team-imgs">
+      <div class="main">
+        <header id ='header'>
+          <div id = "container">
+              <nav class="nav">
+                  <span id='img'>
+                      <a href="../index.html." class="logo">    
+                          <i class="fas fa-home"></i>
+                          logo
+                      </a> 
+                  </span>
+                  <ul>
+                  <li>
+                      <a href="#container1">Team</a>
+                  </li>
+                  <li>
+                      <a href="#work-section">Work</a>
+                  </li>
+                  <li>
+                      <a href="#">Price</a>
+                  </li>
+                  <li>
+                      <a href="#contact-us">Contact</a>
+                  </li>
+                  <li>
+                    <div class="dropdown">
+                      <a>DropDown ▾</a>
+                      <div class="dropdown-content">
+                        <a href= "#container1" style="color: black; ">Team</a>
+                        <a href= "#work-section" style="color: black;">Work</a>
+                        <a href= "#contact-us" style="color: black;">Contact</a>
+                      </div>
+                    </div>                    
+                  </li>
+                  </ul>
+                  <div id="nav-toggle" onclick="toggle(event)" class="dropdown">     
+                      <i class="fa fa-bars" aria-hidden="true" id = 'nav-icon'></i>
+                      <div class="dropdown-content">
+                        <a href= "#container1" style="color: black; ">Team</a>
+                        <a href= "#work-section" style="color: black;">Work</a>
+                        <a href= "#contact-us" style="color: black;">Contact</a>
+                      </div>
+                    </div>
+              </nav>
+              <h2 id = 'header-h2'>Talentera</h2>
+          </div>
+    
+        </header>
+        <!--Team Section -->
+        <section class="container" id="container1">
+          <header class="first-sec">
+            <h1>OUR TEAM</h1>
+            <p>Meet the team - our office rate:</p>
+          </header>
+        </section>
+        <!--Team Section -->
+        <section class="team-imgs" id = 'team-imgs'>
               <div>
                 <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="" class="team-img">
                 <h4>Islam</h4>
@@ -58,7 +89,7 @@
             </section>
         
             <!-- Our Work Section -->
-            <section class="work-section">
+            <section class="work-section" id = 'work-section'>
               <div class="work-inner-div">
                 <div class="container">
                   <h4><b>John Doe</b></h4>
@@ -87,9 +118,9 @@
                 </div>
               </div>
             </section>
-
+            
             <!-- Contact Us -->
-            <section class="contact-us">
+            <section class="contact-us" id = 'contact-us'>
               <div class="contact-us-div">
                 <h1>Contact Us</h1>
                 <h2>Address</h2>
@@ -121,11 +152,11 @@
                 </form>
               </div>
             </section>
-        
             <!-- Footer -->
             <footer>
               <p>GridBiz &copy; 2018</p>
             </footer>
           </div>
-    </body>
+          <script src="../js/header.js"></script>    
+        </body>
 </html>
