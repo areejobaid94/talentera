@@ -2,9 +2,9 @@
   "name": "talentera",
   "version": "1.0.0",
   "description": "Responsive website",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "start":"index.html",
+    "start": "index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +17,5 @@
   "bugs": {
     "url": "https://github.com/areejobaid94/talentera/issues"
   },
-  "homepage": "https://github.com/areejobaid94/talentera#readme"
+  "homepage": "https://talentera.herokuapp.com/"
 }
