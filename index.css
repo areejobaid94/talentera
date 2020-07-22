@@ -1,0 +1,182 @@
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+width: 100%;
+margin: 10;
+border: 0;
+border-bottom: 1px solid #ccc;
+box-sizing: border-box;
+resize: vertical;
+}
+
+label {
+padding: 10px 10px 10px 0;
+display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+background-color:black;
+color: white;
+padding: 12px;
+cursor: pointer;
+float: right;
+margin-top: 12px;
+}
+
+.col-75 {
+float: left;
+width: 100%;
+margin: 0;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  }
+    
+  body {
+    background:white;
+    line-height: 1.4;
+  }
+  
+  #header{
+    min-height: 47vh;
+    width: 100%;
+    }
+    #col-75 label{
+      width: 25%;
+    }
+  .btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+  }
+  
+  .main {
+    display: grid;
+  } 
+  
+  .container {
+    margin-top: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+      'first-sec'
+  }  
+  .first-sec {
+    grid-area: first-sec;
+    min-height: 100px;
+    background-color: white;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    
+  .team-imgs {
+    display: grid;
+    text-align: center;
+    margin: 0;
+    grid-template-areas:
+    'team-img team-img team-img team-img'
+  }
+  
+  .work-section {
+    margin-top: 35px;
+    min-height: 27rem;
+    display: grid;
+    grid-gap: 10px;
+    background-color: #333;
+    align-items: center;
+    text-align: center;
+    padding-right: 10px;
+    padding-right: 10px;
+    grid-template-areas:
+    'work-inner-section work-inner-section work-inner-section work-inner-section'
+  } 
+  .contact-us{
+    min-height: 24rem;
+    background-color: gainsboro;
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+    text-align: var(--light);
+
+    grid-template-areas:
+    'contact-us-div contact-us-form'
+  }
+  .contact-us-form{
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: vertical;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  }
+  .work-item{
+      margin: 0;
+      min-height: 35vh;
+      width: 100%;
+  }
+  .work-inner-section{
+    padding: 0;
+    background-color: #fff;
+  }
+  .team-img{
+    border-radius: 50%;
+    height: 20vh;
+    width: 20vh;
+  }
+  .work-inner-div{
+    min-width: 42vh;
+  }
+  /* Footer */
+  footer {
+    margin-top: 1rem;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
+  }  
+  
+  @media (max-width: 500px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    .work-item{
+      width: 100%;
+    }
+    .team-imgs {
+      grid-template-areas:
+      'team-img'
+      'team-img'
+      'team-img'
+      'team-img'
+    }
+    .work-section {
+      grid-gap: 0;
+      padding: 0;
+      grid-template-areas:
+      'work-inner-section'
+      'work-inner-section'
+      'work-inner-section'
+      'work-inner-section'
+    }
+    .contact-us{
+      grid-template-areas:
+      'contact-us-div'
+      'contact-us-form'
+    }
+  }

@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white; 
+}
+ /* Navigation */
+ .nav ul {
+    display: block;
+    margin-top: 4vh;
+    grid-area: ul;
+    display: grid;
+    list-style: none;
+    background-color: black;
+    grid-template-columns: repeat(4, .1fr);
+  } 
+  .nav a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+  }
+
+
+  .nav {
+    grid-area: nav;
+    text-align: center;
+    background-color: black;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      'logo ul ul ul ul ul ul ul  ul ul ul ul ul  tag'
+  }
+  
+  .logo {
+    margin-top: 4vh;
+    grid-area: logo;
+    min-height: 30px;
+  }
+  span #img{
+    background-color:green;
+  }
+
+ body{
+    background: url(https://i0.wp.com/rjeem.com/wp-content/uploads/2018/08/1535252652261-1.jpg?fit=1200%2C675&ssl=1);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#nav-toggle {
+    display: none;
+    grid-area: tag;
+ }
+ #nav-icon{
+  margin-top: 4vh;
+ }
+
+@media (max-width: 700px) {
+    #nav-toggle {
+        display: block;
+    }
+    .nav ul {
+        display: none;
+    }
+  }
