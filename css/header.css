@@ -55,8 +55,7 @@
     margin-right: 2%;
   }
 
-  #header-h2{
-      width: 100px;  
+  #header-h3{
       margin-left: 3vh;
       position: absolute;
       bottom: 51vh;
@@ -64,6 +63,8 @@
       background-color: black;
       color: white;
   }
+
+
     /* header dropdown */
     .dropdown {
       position: relative;
