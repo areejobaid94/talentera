@@ -199,6 +199,9 @@ clear: both;
       'contact-us-form'
     }
   }
+  #link-it-div{
+    line-height: 2.5;
+  }
 
   .fa-map-marker-alt:before,.fa-phone-alt:before, .fa-envelope:before{
     color: rgb(34, 216, 110);
