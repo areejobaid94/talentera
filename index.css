@@ -8,6 +8,10 @@ box-sizing: border-box;
 resize: vertical;
 }
 
+.contact-us-div{
+  grid-area: contact-us-div;
+  padding: 15px;
+}
 label {
 padding: 10px 10px 10px 0;
 display: inline-block;
@@ -111,23 +115,24 @@ clear: both;
     grid-gap: 10px;
     background-color: #333;
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
     padding-right: 10px;
     padding-right: 10px;
     grid-template-areas:
     'work-inner-section work-inner-section work-inner-section work-inner-section'
   } 
   .contact-us{
-    min-height: 24rem;
+    min-height: 22rem;
     background-color: gainsboro;
     display: grid;
     grid-gap: 10px;
     align-items: center;
     text-align: var(--light);
     grid-template-areas:
-    'contact-us-div contact-us-form'
+    'contact-us-div contact-us-form contact-us-form'
   }
   .contact-us-form{
+    grid-area: contact-us-form;
     text-align: left;
     padding: 10px;
     margin: 10px;
@@ -152,6 +157,7 @@ clear: both;
     width: 30vh;
   }
   .work-inner-div{
+    color: white;
     min-width: 42vh;
   }
   /* Footer */
@@ -193,4 +199,7 @@ clear: both;
       'contact-us-form'
     }
   }
-  
+
+  .fa-map-marker-alt:before,.fa-phone-alt:before, .fa-envelope:before{
+    color: rgb(34, 216, 110);
+  }

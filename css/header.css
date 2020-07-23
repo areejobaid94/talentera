@@ -1,10 +1,10 @@
  /* Navigation */
  .nav ul {
-    display: block;
+    width: 40%;
     display: grid;
     list-style: none;
     background-color: black;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, .7fr);
   } 
   .nav a {
     display: block;
@@ -12,26 +12,34 @@
     text-align: center;
     color: white;
     font-size: 1.1rem;
+    margin-right:34px;
   }
-
   .nav {
     grid-area: nav;
     text-align: center;
     background-color: black;
     display: grid;
-    grid-gap: 20px;
-    grid-template-areas:
-      'logo ul ul ul ul ul ul ul  ul ul ul ul ul  ul tag'
+    grid-template-areas: 'logo flex flex flex flex flex flex  flex  flex  flex  flex  flex  flex  flex flex flex';
+    height: 38px;
+    line-height: .5;
+  }
+  #flex{
+    grid-area: flex;
+    display: flex;
+    justify-content: space-between;
+    height:5vh ;
+    padding-left: 10px;
   }
   
   .logo {
-    margin-top: 2.5vh;
     grid-area: logo;
-    min-height: 30px;
+    line-height: 2;
+
   }
   #img{
-    background-color:#3CB371		;
-    min-width: 90px;
+      max-width: 138px;
+      background-color: #3CB371;
+      z-index: 2
   }
   .fa-home:before {
     margin-right: 10px;
@@ -42,8 +50,9 @@
       grid-area: tag;
   }
 
-  #nav-icon{
-    margin-top: 4vh;
+  #span {
+    line-height: 2.5;
+    margin-right: 2%;
   }
 
   #header-h2{
@@ -70,13 +79,27 @@
       background-color: #f9f9f9;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
+      line-height: 2;
+      margin-top: 14px;
     }
     
     .dropdown:hover .dropdown-content {
       display: block;
     }
+    .fas fa-search:before {
+      position: absolute;
+      right: 5px;
+      line-height: .5;
+    }
+    .fa-bars:before{
+      content: "\f0c9";
+      line-height: 2.5;
+      margin-left: 60px;
+  
+    }
 
 @media (max-width: 700px) {
+
     #nav-toggle {
         height: 20px;
         display: block;
@@ -87,19 +110,24 @@
     .dropdown-content {
       min-width: 150px;
       position: absolute;
-      right: 30px;
-      -color: #f9f9f9;
+      text-align: center;
+      display: none;
+      background-color: #f9f9f9;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
+      line-height: 2;
+      margin-top: -2px;
     }
-    .dropdown {
-      position: relative;
-      display: inline-block;
+
+    .nav {
+      text-align: center;
+      background-color: black;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-areas:
+      'logo flex flex flex flex flex flex flex flex tag';
+    } 
+    #span {
+      display: none;
     }
-    .fa-bars:before {
-      content: "\f0c9";
-      position: absolute;
-      right: 5px;
-      margin-top: -6px;
-  }
   }

@@ -20,6 +20,7 @@
                           logo
                       </a> 
                   </span>
+                  <div id ="flex">
                   <ul>
                   <li>
                       <a href="#container1">Team</a>
@@ -35,7 +36,7 @@
                   </li>
                   <li>
                     <div class="dropdown">
-                      <a>DropDown ▾</a>
+                      <a style="width: 99px;">DropDown ▾</a>
                       <div class="dropdown-content">
                         <a href= "#container1" style="color: black; ">Team</a>
                         <a href= "#work-section" style="color: black;">Work</a>
@@ -44,7 +45,11 @@
                     </div>                    
                   </li>
                   </ul>
-                  <div id="nav-toggle" onclick="toggle(event)" class="dropdown">     
+                    <span id="span">
+                      <i class="fas fa-search"></i>
+                    </span>
+                    </div>
+                    <div id="nav-toggle" onclick="toggle(event)" class="dropdown">     
                       <i class="fa fa-bars" aria-hidden="true" id = 'nav-icon'></i>
                       <div class="dropdown-content">
                         <a href= "#container1" style="color: black; ">Team</a>
@@ -53,6 +58,7 @@
                       </div>
                     </div>
               </nav>
+              
               <h2 id = 'header-h2'>Talentera</h2>
           </div>
     
@@ -67,24 +73,24 @@
         <!--Team Section -->
         <section class="team-imgs" id = 'team-imgs'>
               <div>
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="" class="team-img">
-                <h4>Islam</h4>
-                <p>any thing</p>
+                <img src="https://www.afsafi.com/wp-content/uploads/2013/04/social-hub-profile-default.jpg" alt="photo" class="team-img">
+                <h4>Islam AlZatary</h4>
+                <p>Web Designer</p>
               </div>
               <div>
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="" class="team-img">
-                <h4>Islam</h4>
-                <p>any thing</p>
+                <img src="https://www.afsafi.com/wp-content/uploads/2013/04/social-hub-profile-default.jpg" alt="photo" class="team-img">
+                <h4>Tayseer Emam</h4>
+                <p>Support</p>
               </div>
               <div>
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="" class="team-img">
-                <h4>Islam</h4>
-                <p>any thing</p>
+                <img src="https://dailytimes.com.pk/assets/uploads/2017/10/no-avatar.png" alt="photo" class="team-img">
+                <h4>Eman Subhi</h4>
+                <p>Boss man</p>
               </div>
               <div>
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="" class="team-img">
-                <h4>Islam</h4>
-                <p>any thing</p>
+                <img src="https://dailytimes.com.pk/assets/uploads/2017/10/no-avatar.png" alt="photo" class="team-img">
+                <h4>Reem Yakoub</h4>
+                <p>Fixer</p>
               </div>
             </section>
         
@@ -92,14 +98,14 @@
             <section class="work-section" id = 'work-section'>
               <div class="work-inner-div">
                 <div class="container">
-                  <h4><b>John Doe</b></h4>
-                  <p>Architect & Engineer</p>
+                  <h2><b>Our Work</b></h2>
+                  <p></p>
                 </div>
               </div>
               <div class="work-inner-section">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Morning_at_Spirit_Island.jpg/270px-Morning_at_Spirit_Island.jpg" alt="Avatar"  class="work-item">
                 <div class="container">
-                  <h4><b>John Doe</b></h4>
+                  <h4><b>Our Work</b></h4>
                   <p>Architect & Engineer</p>
                 </div>
               </div >
@@ -122,32 +128,38 @@
             <!-- Contact Us -->
             <section class="contact-us" id = 'contact-us'>
               <div class="contact-us-div">
-                <h1>Contact Us</h1>
-                <h2>Address</h2>
-                <p>Contact Info</p> 
+                <b><h2 style="  text-decoration: underline;
+                text-decoration-color: rgb(34, 216, 110);
+                text-decoration-style: wavy;">Contact Us</h2></b>
+                <h3>Address</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Amman, Jordan</p> 
+                <p><i class="fas fa-phone-alt"></i> +962 79 0000000</p> 
+                <p><i class="far fa-envelope"></i> test@test.com</p> 
               </div>
               <div class="contact-us-form">
                 <form action="action_page.php">
                   <div class="row">
                     <div class="col-75">
-                      <label for="fname">First Name</label>
+                      <b><label for="name">Name</label></b>
                       <input type="text">
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-75">
-                      <label for="lname">Last Name</label>
+                      <b><label for="mail">Email</label></b>
                       <input type="text">
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-75">
-                      <label for="lname">Last Name</label>
+                      <b><label for="Message">Message</label></b>
                       <input type="text">
                     </div>
                   </div>
                   <div class="row">
-                    <input type="submit" value="Submit">
+                    <span>
+                      <input type="checkbox"><b> <label>I Like it!</label></b>
+                    </span><input type="submit" value="Send">
                   </div>
                 </form>
               </div>
